@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: #000107;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    margin-left: 230px;
+}
+
+.navbar a {
+    color: #fff !important;
+    font-size: 18px;
+}
+
+.navbar-nav {
+    margin-left: 200px;
+}
+
+.navbar-nav a {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.navbar-links {
+    margin-left: 60px;
+}
+
+.icons {
+    margin-right: 5px;
+}
+
+.hero {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    position: absolute;
+    margin-left: 230px;
+    color: #fff;
+    margin-top: 250px;
+}
+
+.hero h1 {
+    margin-top: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollPath {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+#progressbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 100%;
+    background: linear-gradient(to top, #008aff, #00ffe7);
+    animation:animate 5s linear infinite;
+}
+
+@keyframes identifier {
+    
+}
