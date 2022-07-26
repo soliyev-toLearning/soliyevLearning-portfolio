@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Press+Start+2P&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none !important;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:focus {
+    overflow: none;
+}
+
+body {
+    background: #000107;
+}
+
+.carts {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.about-title {
+    text-align: center;
+    font-family: 'Annie Use Your Telescope', cursive;
+    color: #fff;
+    margin-bottom: 100px;
+}
+
+
+.navbar {
+    background: #000107;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 12px;
+    margin-left: 230px;
+}
+
+.navbar a {
+    color: #fff !important;
+    font-size: 18px;
+}
+
+.dev {
+    color: blueviolet;
+    font-size: 23px;
+    transform: translateY(-3px);
+    position: absolute;
+}
+
+.liner {
+    width: 400px;
+    height: .50px;
+    background: rgba(255, 255, 255, .500);
+    position: absolute;
+    transform: translateX(300px);
+}
+
+.navbar-nav {
+    margin-left: 450px;
+    background: rgba(255, 255, 255, .100);
+    padding: 10px 0px 10px 100px;
+    z-index: 1000;
+}
+
+.navbar-nav a {
+    margin-right: 30px;
+    font-size: 15px;
+}
+
+.navbar-links {
+    margin-left: 165px;
+}
+
+.grey {
+    width: 300px;
+    height: 270px;
+    background: rgba(255, 255, 255, 0.100);
+}
+
+.shablon {
+    position: absolute;
+    background: rgba(64, 18, 108, 0.5);
+    height: 270px;
+    width: 300px;
+    margin-top: -30px;
+    margin-left: -30px;
+    transition: .2s;
+    overflow: hidden;
+}
+
+.logotype {
+    display: flex;
+    align-items: center;
+    padding: 5px 0 0 5px;
+}
+
+.logotype h3 {
+    font-size: 22px;
+    color: #fff;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.logotype span {
+    font-size: 14px;
+    font-weight: 300;
+    transform: translateY(-5px);
+}
+
+.logotype .img {
+    width: 50px;
+}
+
+.shablon:hover {
+    width: 330px;
+    height: 300px;
+}
+
+.cart-info {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: #0000004d;
+    backdrop-filter: blur(3px);
+    padding: 10px;
+    width: 240px;
+    transform: translateY(120px);
+    transition: 0.3s;
+}
+
+.cart-info a {
+    color: #fff;
+    text-decoration: underline !important;
+}
+
+.shablon:hover .cart-info {
+    transform: translateY(0);
+}
+
+.about-me {
+    margin-left: 30px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.certificates {
+    margin-top: 50px;
+    margin-left: -50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.certificate {
+    display: flex;
+}
+
+.certificate h2 {
+    color: #fff;
+}
+
+.certificate span {
+    color: green;
+}
+
+.certificate img {
+    width: 300px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.certificate p {
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.certificate a {
+    color: rgb(96, 255, 10);
+}
+
+.certificate .data {
+    color: #fff;
+    position: absolute;
+    transform: translateX(330px) translateY(85px);
+    font-weight: 100;
+}
+
+.gh {
+    color: rgb(105, 0, 241);
+}
+
+.gh:hover {
+    color: rgb(105, 0, 241);
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    min-width: 700px;
+    margin: auto;
+}
+
+.inputBox {
+    position: relative;
+    width: 300px;
+    display: flex;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    transition: .3s;
+}
+
+.inputBox textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    outline: none;
+    color: #fff;
+    transition: .3s;
+    resize: none;
+    transform: translateY(40px);
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 15px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: blueviolet;
+    transform: translateX(10px) translateY(-7px);
+    font-size: .90em;
+    padding: 0 10px;
+    background: #000107;
+    border-left: 1px solid blueviolet;
+    border-right: 1px solid blueviolet;
+    letter-spacing: .2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid blueviolet;
+}
+
+.send {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #fff;
+    text-transform: uppercase;
+    transition: .5s;
+    letter-spacing: .2em;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #fff;
+    background-image: linear-gradient(-60deg, transparent, transparent 40%,
+            #ffffff44 40%, #ffffff44 60%,
+            transparent 60%, transparent 100%);
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-position-x: 150%;
+}
+
+.send:hover {
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    background-position-x: -150%;
+    transition: background-position-x 600ms;
+}
